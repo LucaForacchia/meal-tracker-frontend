@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.7
+Name: mealtrackerfrontend
+Formal-Name: MealTrackerFrontend
+App-ID: com.example.mealtrackerfrontend
+Version: 0.0.1
+Home-page: https://example.com/mealtrackerfrontend
+Author: Luca Foracchia
+Author-email: forackone@gmail.com
+Summary: First version of frontend for Windows

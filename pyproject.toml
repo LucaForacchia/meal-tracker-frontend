@@ -1,0 +1,38 @@
+[tool.briefcase]
+project_name = "MealTrackerFrontend"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/mealtrackerfrontend"
+license = "GNU General Public License v2 (GPLv2)"
+author = 'Luca Foracchia'
+author_email = "forackone@gmail.com"
+
+[tool.briefcase.app.mealtrackerfrontend]
+formal_name = "MealTrackerFrontend"
+description = "First version of frontend for Windows"
+icon = "src/mealtrackerfrontend/resources/mealtrackerfrontend"
+sources = ['src/mealtrackerfrontend']
+requires = [
+    'wxPython==4.1.1',
+    'requests'
+]
+
+
+[tool.briefcase.app.mealtrackerfrontend.macOS]
+requires = [
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.mealtrackerfrontend.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.mealtrackerfrontend.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.mealtrackerfrontend.iOS]
+supported = false
+
+[tool.briefcase.app.mealtrackerfrontend.android]
+supported = false
