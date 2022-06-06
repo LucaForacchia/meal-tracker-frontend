@@ -1,6 +1,6 @@
 import wx
 
-from mealtrackerfrontend.server_requests import ServerRequest
+from utils.server_requests import ServerRequest
 
 class ConfirmationDialog(wx.Dialog):
 

@@ -1,5 +1,5 @@
 import requests
-import mealtrackerfrontend.configuration as configuration
+import utils.configuration as configuration
 
 class ServerRequest():
     def __init__(self):

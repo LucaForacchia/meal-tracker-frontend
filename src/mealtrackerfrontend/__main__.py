@@ -1,12 +1,14 @@
+import sys
+sys.path.append("C:\\Users\\lucaf\\MealTracker\\meal-tracker-frontend\\src\\mealtrackerfrontend")
+
 import wx
 from time import sleep
+import utils.configuration as configuration
+from utils.server_requests import ServerRequest
 
-import mealtrackerfrontend.configuration as configuration
-from .server_requests import ServerRequest
-
-from .panels.panel_switcher import PanelsSwitcher
-from .panels.home_panel import HomePanel
-from .panels.insertion_panel import InsertionPanel
+from panels.panel_switcher import PanelsSwitcher
+from panels.home_panel import HomePanel
+from panels.insertion_panel import InsertionPanel
 
 class MainFrame(wx.Frame):    
     def __init__(self):
