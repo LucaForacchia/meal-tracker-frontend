@@ -1,5 +1,8 @@
 import sys
-sys.path.append("C:\\Users\\lucaf\\MealTracker\\meal-tracker-frontend\\src\\mealtrackerfrontend")
+import os
+
+path_modules = os.path.join(sys.path[0], "src", "mealtrackerfrontend")
+sys.path.append(path_modules)
 
 import wx
 from time import sleep
@@ -34,7 +37,10 @@ if __name__ == "__main__":
     sleep(0.5)
 
     # Read config file
-    configuration.app_config = configuration.read_config("config_file.ini")
+    # configuration.app_config = configuration.read_config("config_file.ini")
+    configuration.app_config = {
+        "backend_url": "0.0.0.0:5004"
+    }
 
     # Create a wx application
     app = wx.App()
